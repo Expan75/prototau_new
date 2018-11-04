@@ -1,0 +1,451 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body,
+a {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #111111;
+  text-decoration: none;
+}
+a:hover {
+  color: #FF9D4D;
+}
+
+article {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* -------------- Navbar Styling Below -------------- */
+
+/* Nav Div */
+.navbar {
+  font-size: 14px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* Brand */
+.navbar-default .navbar-brand {
+  font-size: 22px;
+  color: #FF7300;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #FF7300;
+}
+
+.navbar-default .navbar-brand:active {
+  color: #111111;
+}
+.navbar-default .navbar-brand:visited {
+  color: #FF7300;
+}
+
+/* Nav Links */
+.navbar-default .navbar-nav > li > a {
+  padding-bottom: 3px;
+  text-align: center;
+
+}
+/* Nav Links Activates etc. */
+
+.navbar-default .navbar-nav > li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.navbar-default .navbar-nav > li:hover:after {
+  width: 80%;
+  background: #111111;
+  color: #FF7300;
+}
+
+.navbar-default .navbar-nav > li:active {
+  color: #5E5959;
+}
+
+/* -------------- End of Navbar Styling -------------- */
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+.carousel-caption {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  top: 38%;
+  left: 5%;
+  right: 5%;
+  text-decoration: none;
+  font-style: bold;
+  font-size: 32px;
+}
+
+.carousel-caption-link {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  font-style: bold;
+  font-size: 16px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 19px;
+  padding: 12px;
+  opacity: 15px;
+}
+.carousel-caption-link:hover {
+  background-color: rgba(255,255,255, 0.1);
+  text-decoration: none;
+}
+.carousel-caption-link:active {
+  text-decoration: none;
+  color: #ffffff;
+  background: rgb(255,255,255,0.3);
+}
+.carousel-caption-link:visited {
+  text-decoration: none;
+  color: #ffffff;
+  background: rgb(255,255,255,0.3);
+}
+
+
+/* ----- Circle Header Stylings & Animation ------ */
+
+.circle-header {
+  padding-top: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.circle-header:hover {
+}
+
+.circle-header-headline { 
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.img-circle {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.circle-image-container {
+  height: 256px;
+  width: 100%;
+  text-align: center;
+}
+.circle-image {
+  border-radius: 50%;
+  height: 100%;
+  min-width: 256px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  position: relative;
+  box-shadow: 
+    inset 0 0 0 16px rgba(255,255,255,0.2),
+    0 1px 2px rgba(0,0,0,0.1);
+  transition: all 0.4s ease-in-out;
+  cursor: default;
+}
+
+.circle-info {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: absolute;
+  background: rgba(255,115,0, 0.85); /* CUSTOMIZE THIS to fit specific images */
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+}
+
+.circle-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin: 0 30px;
+  padding: 45px 0 0 0;
+  height: 140px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 
+    0 0 1px #fff, 
+    0 1px 2px rgba(0,0,0,0.3);
+}
+
+.circle-info a {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.circle-image a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px;
+  border: solid 3px #ffffff;
+  border-radius: 25px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.circle-image a:active {
+  color: #FF7300;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.circle-image a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.circle-image:hover {
+  box-shadow: 
+    inset 0 0 0 1px rgba(255,255,255,0.1),
+    0 1px 2px rgba(0,0,0,0.1);
+}
+
+.circle-image:hover .circle-info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Sets the image urls for the circle images */
+/* IMPORTANT: Picture needs to be 256x256 (Will brake design otherwise); */
+#circle1 {
+  background-image: url("https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/how_to_spend_your_money_1054090467.jpg?quality=89&w=256");
+}
+#circle2 {
+  background-image: url("https://www.cis.rit.edu/~cnspci/courses/common/images/checkerboard-256x256.jpg");
+}
+#circle3 {
+  background-image: url("https://news.artnet.com/app/news-upload/2017/04/news-logo-256x256.png");
+}
+/* -------------------------------------------------------------------- */
+
+/* ----- End of Circle Header Stylings & Animation ------ */
+
+/* Parallax effect and Parallax content - note: background-images set just below with IDs */
+#parallax1 {
+  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/23915911_1731691816843704_8685908630394450572_n.jpg?oh=9279db570bde05a278388b7b4c73a207&oe=5B1C4BEB");
+  height: 100%;
+}
+#parallax2 {
+  background-image: url("../resources/parallax/parallax2.png");
+}
+
+.parallax {
+  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* End of Parallax effect and Parallax content */
+
+/* --------- Content 2 Styles (I.e. President's Address) --------- */
+
+#president-text-box {
+  font-size: 18px;
+  text-shadow: black 0.5px 0px 0px;
+  padding: 10%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+#president-text-title {
+  color: #FF8300;
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#president-text-box article {
+  padding: 5%;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+
+#president_pic {
+  position: relative;
+  right: -45%;
+  display: inline-block;
+  max-height: 124px;
+  max-width: 124px;
+}
+
+/* -------------- Parallax Content Responsiveness -------------- */
+
+@media (min-width: 1100px) {
+  #president-text-box  {
+    padding-top: 15px;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 760px) {
+  #president-text-title {
+    color: #FF7300;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  #president-text-box  {
+    padding: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  #president-text-box article {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 675px) {
+    #president-text-box  {
+      padding: 4%;
+      padding-top: 1%;
+      font-size: 12px;
+  }
+}
+/* -------------- End Parallax Content Responsiveness -------------- */
+
+/* --------- Closes Content2 --------- */
+
+/* --------- Content 3 - Sponsorship Field --------- */
+
+.sponsor-field {
+  text-align: center;
+  background-color: #FF8300;
+}
+
+#sponsor1 {
+  width: 100%;
+}
+#kpmg-img {
+
+}
+/* Fluid-container Overwrite Stylings */
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* End of Fluid-container Overwrite Stylings */
+
+/* --------- Closes Content 3 --------- */
+
+/* Manager Bild Styling */
+#verona_img {
+}
+
+#italic_picture_description {
+  text-align: center;
+  padding: 9px;
+}
+/* Meny Styling */
+.menu-header {
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+.menu-item {
+  padding: 10px;
+}
+.name-of-dish {
+  font-weight: bold;
+  font-style: normal;
+}
+.ingridients-of-dish {
+  font-style: normal;
+}
+.price-of-dish {
+  font-style: italic;
+} 
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.footer {
+  background-color: white;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.social_icons {
+  float: none;
+  padding: 7px;
+  right: 50%;
+}
+#tothetop, #tothetop:visited, #tothetop:hover, #tothetop:active {
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+}
+
+#Brand_AUEBS {
+  font-size: 18px;
+}
+
+/* -------------- NavBar Brand + Link Font Responsiveness -------------- */
+@media  (max-width: 480px) {
+  #Brand_AUEBS {
+    font-size: 14px !important;
+  } 
+}
+
+@media (max-width: 1024px) {
+  .nav_anchor_text {
+    font-size: 9px;
+  }
+  #Brand_AUEBS {
+    font-size: 14px;
+  } 
+}
+
+@media (max-width: 1200px) {
+  .nav_anchor_text {
+    font-size: 9px;
+  }
+/* -------------- End of NavBar Brand + Link Font Responsiveness -------------- */
