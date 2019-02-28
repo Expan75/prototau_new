@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PrototAU</title>
+    <title>prototau</title>
 
     <!-- Title Icon -->
     <link href="resources/favicon.ico" rel="shortcut icon"/>
@@ -26,6 +26,10 @@
     <!-- Main Javascript & jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+    <!-- timeline scripts -->
+    <script src="https://use.typekit.net/bkt6ydm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,10 +40,9 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -49,26 +52,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="Brand_AUEBS" href="#"><b>PrototAU</b></a>
+                <a class="navbar-brand" id="Brand_AUEBS" href="#"><b>prototau</b></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#content1" class="nav_anchor_text">OPPORTUNITIES</a>
+                        <a href="#the-intro" class="nav_anchor_text">intro</a>
                     </li>
                     <li>
-                        <a href="#content1" class="nav_anchor_text">PURPOSE</a>
+                        <a href="#timeline-container" class="nav_anchor_text">the plan</a>
                     </li>
                     <li>
-                        <a href="#content1" class="nav_anchor_text">EVENTS</a>
+                        <a href="#the-goal" class="nav_anchor_text">our goal</a>
                     </li>
                     <li>
-                        <a href="#parallax1" class="nav_anchor_text">SPONSORSHIPS</a>
+                        <a href="#the-sponsors" class="nav_anchor_text">sponsors</a>
                     </li>
                     <li>
-                        <a href="#" class="nav_anchor_text">CONTACT</a>
+                        <a href="#contact" class="nav_anchor_text">contact</a>
                     </li>
                 </ul>
             </div>
@@ -90,28 +93,37 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('https://www.abdn.ac.uk/news/images/Team_PrototAU.jpg');"></div>
+                <div class="fill" style="background-image:url('resources/wides/team.jpg');"></div>
                 <div class="overlay">
                     <div class="carousel-caption">
-                        <h1>The Biggest Society on Campus</h1><br>
-                        <a class="carousel-caption-link" href="#content1">Check out our Offers</a>
+                        <h1>Welcome to the team.</h1>
+                        <div class="carousel-paragraph">
+                          <p> Check out the minds that make the wheels turn</p><br><br>
+                        </div>
+                        <a class="carousel-caption-link" href="#content1">Click to meet the team</a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('https://www.shell.com/energy-and-innovation/shell-ecomarathon/europe/_jcr_content/pagePromo/image.img.800.jpeg/1531393168618/shell-eco-marathon-europe-car-on-track.jpeg');"></div>
+                <div class="fill" style="background-image:url('resources/wides/atom.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>Society of the Year</h1><br>
-                    <a class="carousel-caption-link" href="#parallax1">Student Testamonials</a>
+                    <h1>Harnessing the power of hydrogen</h1>
+                    <div class="carousel-paragraph">
+                      <p> Utilising modern new sustainable solutions</p><br><br>
+                    </div>
+                    <a class="carousel-caption-link" href="#parallax1">What powers our engine</a>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('https://www.mccormick.northwestern.edu/mechanical/images/undergraduate/undergraduate-prospective-students-index.jpg');"></div>
+                <div class="fill" style="background-image:url('resources/wides/car2.jpeg');"></div>
                 <div class="carousel-caption">
-                    <h1>Academics, Career Opportunities, and Social Events</h1><br>
-                    <a class="carousel-caption-link" href="#parallax1">Sign up</a>
+                    <h1>In the race towards innovation</h1>
+                    <div class="carousel-paragraph">
+                      <p> Engineers & Thinkers Building a Better Tomorrow</p><br><br>
+                    </div>
+                    <a class="carousel-caption-link" href="#parallax1">Follow our journey</a>
                 </div>
             </div>
         </div>
@@ -127,126 +139,197 @@
 
 
     <!-- Page Content -->
-    <div class="container-fluid" id="content1">
-            <div class="col-md-4 circle-header">
-                <div class="circle-image-container">
-                    <div class="circle-image" id="circle1">
-                        <div class="circle-info" id="circle-info1">
-                            <h3> Want to know more? </h3>
-                            <a href="#">Click here</a>
-                        </div>
-                    </div>
-                </div>
-                <p class="circle-header-headline"> Academics </p>
-                <article> Delegations to Conferences in Edinburgh, London, Warwick and York. Top-of-their-Field Guest Lecturers. Briefings in current Research in Economics, Business & Management, and Finance.</article>
-            </div>
-            <div class="col-md-4 circle-header">
-                <div class="circle-image-container">
-                    <div class="circle-image" id="circle2">
-                        <div class="circle-info" id="circle-info2">
-                            <h3> Want to know more? </h3>
-                            <a href="#">Click here</a>
-                        </div>
-                    </div>
-                </div>
-                <p class="circle-header-headline"> Careers </p>
-                <article> Lending our multi-industry spanning network to our Members. Job & Internship Workshops, Networking Sessions, and proffessional skill development workshops.</article>
-            </div>
-            <div class="col-md-4 circle-header">
-                <div class="circle-image-container">
-                    <div class="circle-image" id="circle3" id="circle-info3">
-                        <div class="circle-info">
-                            <h3> Want to know more? </h3>
-                            <a href="#">Click here</a>
-                        </div>
-                    </div>
-                </div>
-                <p class="circle-header-headline"> Socials </p>
-                <article> The Bi-annual AUEBS Ball, Fabled Pub-Crawls, Bowling with AUEBS, Charity Events. Connecting and bonding, regardless of year of study or discipline. AUEBS Network.</article>
-            </div>
+    <div class="container-fluid" id="the-intro">
+      <div class="introduction-container">
+        <h2 id="intro-title"> Introduction </h2><br>
+        <article id="intro-content">
+          PrototAU is a team comprised of engineering & business students that together
+          help contruct a hydrogen powered vechicle from scratch, all for the purpose of
+          competing in the Shell Eco-marathon Europe 2019. <br><br>
+
+          The contest, being held this summer, is a massive international event where
+          teams from all over the world compete to see who can produce the most efficient and clean racing vechicle.
+          By utilising hydrogen fuel cells, our car will be able to navigate the track with the only exhaust being water.<br><br>
+
+          <p class="tagline">There is a lot to be done, and our work as only started.</p>
+        </article>
+      </div>
     </div> <!-- /. 1st container -->
 
-    <!-- Start 1st Parallax divider -->
-    <div class="parallax" id="parallax1">
+    <!-- Start of Timeline container -->
+    <div class="container-fluid" id="timeline-container">
+      <div class="row example-centered">
+        <div class="col-md-12 example-title">
+          <h1 class="tagline">The Plan</h2><br><br>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <ul class="timeline timeline-centered">
+              <li class="timeline-item">
+                <div class="timeline-info">
+                  <span>September 1, 2018</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <h3 class="timeline-title">The Start</h3>
+                  <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                    eu pede mollis pretium. Pellentesque ut neque.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-info">
+                    <span>March 23, 2016</span>
+                  </div>
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-title">Planning & Design</h3>
+                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                      eu pede mollis pretium. Pellentesque ut neque. </p>
+                    </div>
+                  </li>
+                  <li class="timeline-item">
+                    <div class="timeline-info">
+                      <span>March 23, 2016</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-title">Building & Testing</h3>
+                      <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                        eu pede mollis pretium. Pellentesque ut neque. </p>
+                      </div>
+                    </li>
+                    <li class="timeline-item period">
+                      <div class="timeline-info"></div>
+                      <div class="timeline-marker"></div>
+                      <div class="timeline-content">
+                        <h2 class="timeline-title">2019</h2>
+                      </div>
+                    </li>
+                    <li class="timeline-item">
+                      <div class="timeline-info">
+                        <span>April 02, 2016</span>
+                      </div>
+                      <div class="timeline-marker"></div>
+                      <div class="timeline-content">
+                        <h3 class="timeline-title">Training & Optimization</h3>
+                        <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                          eu pede mollis pretium. Pellentesque ut neque. </p>
+                        </div>
+                      </li>
+                      <li class="timeline-item">
+                        <div class="timeline-info">
+                          <span>April 28, 2016</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                          <h3 class="timeline-title">Final Preperations</h3>
+                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                            eu pede mollis pretium. Pellentesque ut neque. </p>
+                          </div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-info">
+                            <span>July 2nd, 2019</span>
+                          </div>
+                          <div class="timeline-marker final-marker"></div>
+                          <div class="timeline-content">
+                            <h3 class="timeline-title" id="the-goal">Shell Eco Marathon</h3>
+                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                              eu pede mollis pretium. Pellentesque ut neque. </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+        </div>
+        <div class="container-fluid video" id="the-goal">
+          <div class="goal-container center">
+            <h2 id="the-goal-video"> Our Goal </h2><br>
+            <iframe width="560" height="315" id="youtube-embedd" src="https://www.youtube.com/embed/Wt_Ruy_ejPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div><br><br><br>
+        </div> <!-- /. 1st container -->
+
+    <div class="container-fluid cut-container">
+      <!-- Page Content -->
+      <div class="container-fluid team-container">
         <div class="row">
-            <div class="col-sm-5">
-            </div>
-            <div class="col-sm-7">
-                <div id="president-text-box">
-                    <article>
-                        <h1 id="president-text-title">Our Purpose</h1>
-                        Mauris at diam at nisi laoreet suscipit aliquet sit amet enim. Pellentesque ut tristique ligula, at iaculis enim. Curabitur quam est, ullamcorper vitae ultrices a, molestie eu metus.<br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus nec nunc aliquet fringilla mollis id ipsum. Aliquam in nulla non ex semper gravida quis eu dolor. Morbi eu imperdiet ex. Vivamus dictum nibh non massa pulvinar aliquam.<br><br>
-                        Etiam vulputate metus tellus, ac semper velit aliquam vitae. Suspendisse risus leo, tempor vitae ante et, facilisis tincidunt orci. Quisque lacinia sapien eget erat aliquet, sit amet venenatis purus dapibus.<br><br>
-                        Best Wishes,<br>
-                        President Presidentsson,<br> President of AUEBS<br>
-                    </article>
-                </div>
-            </div>
+          <div class="col-12-lg"><h1 id="the-team-caption">meet the team</h1></div>
+          <p id="hover-pic-explained"> Hover over the pictures to get to know them! </p>
+          <br><br>
         </div>
-    </div>
-    <!-- closing 1st Parallax divider -->
-
-    <div class="container-fluid">
-        <div class="row sponsor-field">
-            <div class="col-lg-6">
-            </div>
-            <div class="col-lg-6">
-                <row>
-                    <h1> Offical Sponsors </h1>
-                </row>
-                <row>
-                    <div id="sponsor1">
-                        <img class="img-responsive" id="kpmg-img" src="https://media.cdn.gradconnection.com/start-here.png">
-                        <p> We're proud to be offically sponsored by one of the leading companies blah blah blah, dorem ipsum. To read more, check out their <a href="https://home.kpmg.com/uk/en/home.html">website</a>.</p>
-                    </div>
-                </row>
-                 <row>
-                    <div id="sponsor2">
-                        <p> 2nd Sponsor </p>
-                    </div>
-                </row>
-                 <row>
-                    <div id="sponsor3">
-                        <p> 2nd Sponsor </p>
-                    </div>
-                </row>
-            </div>
+        <div class="row">
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
         </div>
-    </div>
-    <!-- closing content2 container -->
+        <div class="row">
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+          <div class="col-2-lg team-member-pic-card">
+            <img src="resources/team-pictures/example-headshot.png" class="img-responsive member-pic">
+          </div>
+        </div><br>
+        <hr class="divider">
 
-    <!-- Start 2nd Parallax divider
-    <div class="parallax" id="parallax2">
-      <div class="parallax-text">
-        <p> Välkommen! <p>
+        <div class="container-fluid sponsor-container" id="the-sponsors">
+          <h4>sponsored by:</h4><br>
+          <span><img class="img-responsive company-logo" src="resources/logos/toyota-logo.png"></span>
+        </div>
       </div>
-    </div>
-    closing 2nd Parallax divider -->
 
-    <div class="container footer">
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-7">
-                    <h4> Slottsträdgårdens Kafé </h4>
-                    <p> Malmöhusvägen 8, 211 18 Malmö </p>
-                    <P> Tel: 040-30 40 34 </p>
-                </div>
-                <div class="col-lg-5">
-                  <a href="https://www.instagram.com/explore/locations/1162701/slottstradgardens-kafe/"><img src="resources/socialmedia/instagram.png" class="social_icons"></a>
-                  <a href="https://www.facebook.com/Slottstr%C3%A4dg%C3%A5rdens-Kaf%C3%A9-77882565942/"><img src="resources/socialmedia/facebook.png" class="social_icons"></a>
-                  <a href="https://twitter.com/hakanecon"><img src="resources/socialmedia/twitter.png" class="social_icons"><a/>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-12" id="tothetop">
-                    <a href="#">Tillbaka</a>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid">
+
+        </div>
+      </footer>
 
     </div>
     <!-- /. 2nd container -->
@@ -271,8 +354,6 @@
     <!-- Smooth Scroll -->
     <script src="js/smooth-scroll.js"></script>
 
-    <!-- Nav Element Resize -->
-    <script src="js/resize.js"></script>
 
 </body>
 

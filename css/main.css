@@ -9,8 +9,6 @@ body,
 a {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  color: #111111;
-  text-decoration: none;
 }
 a:hover {
   color: #FF9D4D;
@@ -27,14 +25,27 @@ article {
 
 /* Nav Div */
 .navbar {
-  font-size: 14px;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  font-size: 1.2em;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  min-height: 60px;
+  background: transparent;
+  border-color: transparent;
+}
+
+.navbar-solid {
+  background-color: #f8f8f8;
+  border: #e7e7e7;
+  box-shadow: 0 0 4px grey;
+  color: black;
+  transition: 1s ease 0s;
 }
 
 /* Brand */
 .navbar-default .navbar-brand {
-  font-size: 22px;
+  font-size: 1.6em;
   color: #FF7300;
 }
 
@@ -53,7 +64,8 @@ article {
 .navbar-default .navbar-nav > li > a {
   padding-bottom: 3px;
   text-align: center;
-
+  color: #777;
+  text-shadow: 0
 }
 /* Nav Links Activates etc. */
 
@@ -77,6 +89,11 @@ article {
   color: #5E5959;
 }
 
+.navbar-nav > li:hover: {
+  color: #FF7300;
+}
+
+
 /* -------------- End of Navbar Styling -------------- */
 
 .carousel,
@@ -91,12 +108,17 @@ article {
 .carousel-caption {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  top: 38%;
+  top: 35%;
   left: 5%;
   right: 5%;
   text-decoration: none;
   font-style: bold;
-  font-size: 32px;
+  font-size: 1.6em;
+}
+
+.carousel-paragraph {
+  font-size: 0.8em;
+  font-weight: lighter;
 }
 
 .carousel-caption-link {
@@ -105,9 +127,9 @@ article {
   text-decoration: none;
   font-style: bold;
   font-size: 16px;
-  border: 3px solid;
+  border: 2px solid;
   border-color: white;
-  border-radius: 19px;
+  border-radius: 2px;
   padding: 12px;
   opacity: 15px;
 }
@@ -126,274 +148,354 @@ article {
   background: rgb(255,255,255,0.3);
 }
 
+/* Content 1 - introduction */
 
-/* ----- Circle Header Stylings & Animation ------ */
+.introduction-container {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
 
-.circle-header {
-  padding-top: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 35px;
+#intro-title {
+  font-size: 3.0em;
   text-align: center;
 }
 
-.circle-header:hover {
-}
-
-.circle-header-headline { 
-  margin-top: 10px;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.img-circle {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.circle-image-container {
-  height: 256px;
-  width: 100%;
+.tagline {
   text-align: center;
 }
-.circle-image {
-  border-radius: 50%;
-  height: 100%;
-  min-width: 256px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
+/* Closes introuction */
+
+/* Content 2 - Timeline */
+
+/*-- GENERAL STYLES ------------------------------*/
+   .timeline {
+     line-height: 1.4em;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+   }
+   .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+     line-height: inherit;
+   }
+
+   .example-title {
+     text-align: center;
+   }
+
+   /*----- TIMELINE ITEM -----*/
+   .timeline-item {
+     padding-left: 40px;
+     position: relative;
+   }
+   .timeline-item:last-child {
+     padding-bottom: 0;
+   }
+
+   /*----- TIMELINE INFO -----*/
+   .timeline-info {
+     font-size: 12px;
+     font-weight: 700;
+     letter-spacing: 3px;
+     margin: 0 0 .5em 0;
+     text-transform: uppercase;
+     white-space: nowrap;
+   }
+
+   /*----- TIMELINE MARKER -----*/
+   .timeline-marker {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 15px;
+   }
+   .timeline-marker:before {
+     background: #FF7300;
+     border: 3px solid transparent;
+     border-radius: 100%;
+     content: "";
+     display: block;
+     height: 15px;
+     position: absolute;
+     top: 4px;
+     left: 0;
+     width: 15px;
+     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+   }
+
+   .final-marker:before .final-marker:after {
+    background:
+   }
+
+   .timeline-marker:after {
+     content: "";
+     width: 3px;
+     background: #CCD5DB;
+     display: block;
+     position: absolute;
+     top: 24px;
+     bottom: 0;
+     left: 6px;
+   }
+   .timeline-item:last-child .timeline-marker:after {
+     content: none;
+   }
+
+   .timeline-item:not(.period):hover .timeline-marker:before {
+     background: transparent;
+     border: 3px solid #FF6B6B;
+   }
+
+   /*----- TIMELINE CONTENT -----*/
+   .timeline-content {
+     padding-bottom: 40px;
+   }
+   .timeline-content p:last-child {
+     margin-bottom: 0;
+   }
+
+   /*----- TIMELINE PERIOD -----*/
+   .period {
+     padding: 0;
+   }
+   .period .timeline-info {
+     display: none;
+   }
+   .period .timeline-marker:before {
+     background: transparent;
+     content: "";
+     width: 15px;
+     height: auto;
+     border: none;
+     border-radius: 0;
+     top: 0;
+     bottom: 30px;
+     position: absolute;
+     border-top: 3px solid #CCD5DB;
+     border-bottom: 3px solid #CCD5DB;
+   }
+   .period .timeline-marker:after {
+     content: "";
+     height: 32px;
+     top: auto;
+   }
+   .period .timeline-content {
+     padding: 40px 0 70px;
+   }
+   .period .timeline-title {
+     margin: 0;
+   }
+
+   /*----------------------------------------------
+       MOD: TIMELINE SPLIT
+   ----------------------------------------------*/
+   @media (min-width: 768px) {
+     .timeline-split .timeline, .timeline-centered .timeline {
+       display: table;
+     }
+     .timeline-split .timeline-item, .timeline-centered .timeline-item {
+       display: table-row;
+       padding: 0;
+     }
+     .timeline-split .timeline-info, .timeline-centered .timeline-info,
+     .timeline-split .timeline-marker,
+     .timeline-centered .timeline-marker,
+     .timeline-split .timeline-content,
+     .timeline-centered .timeline-content,
+     .timeline-split .period .timeline-info,
+     .timeline-centered .period .timeline-info {
+       display: table-cell;
+       vertical-align: top;
+     }
+     .timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+       position: relative;
+     }
+     .timeline-split .timeline-content, .timeline-centered .timeline-content {
+       padding-left: 30px;
+     }
+     .timeline-split .timeline-info, .timeline-centered .timeline-info {
+       padding-right: 30px;
+     }
+     .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+       position: relative;
+       left: -45px;
+     }
+   }
+
+   /*----------------------------------------------
+       MOD: TIMELINE CENTERED
+   ----------------------------------------------*/
+   @media (min-width: 992px) {
+     .timeline-centered,
+     .timeline-centered .timeline-item,
+     .timeline-centered .timeline-info,
+     .timeline-centered .timeline-marker,
+     .timeline-centered .timeline-content {
+       display: block;
+       margin: 0;
+       padding: 0;
+     }
+     .timeline-centered .timeline-item {
+       padding-bottom: 40px;
+       overflow: hidden;
+     }
+     .timeline-centered .timeline-marker {
+       position: absolute;
+       left: 50%;
+       margin-left: -7.5px;
+     }
+     .timeline-centered .timeline-info,
+     .timeline-centered .timeline-content {
+       width: 50%;
+     }
+     .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+       float: left;
+       text-align: right;
+       padding-right: 30px;
+     }
+     .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+       float: right;
+       text-align: left;
+       padding-left: 30px;
+     }
+     .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+       float: right;
+       text-align: left;
+       padding-left: 30px;
+     }
+     .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+       float: left;
+       text-align: right;
+       padding-right: 30px;
+     }
+     .timeline-centered > .timeline-item.period .timeline-content {
+       float: none;
+       padding: 0;
+       width: 100%;
+       text-align: center;
+     }
+     .timeline-centered .timeline-item.period {
+       padding: 50px 0 90px;
+     }
+     .timeline-centered .period .timeline-marker:after {
+       height: 30px;
+       bottom: 0;
+       top: auto;
+     }
+     .timeline-centered .period .timeline-title {
+       left: auto;
+     }
+   }
+
+   /*----------------------------------------------
+       MOD: MARKER OUTLINE
+   ----------------------------------------------*/
+   .marker-outline .timeline-marker:before {
+     background: transparent;
+     border-color: #FF6B6B;
+   }
+   .marker-outline .timeline-item:hover .timeline-marker:before {
+     background: #FF6B6B;
+   }
+
+/* Closes timeline */
+
+.video {
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+#youtube-embedd {
+  max-width: 560px;
+  width: 60%;
+}
+
+.cut-container {
+  -webkit-clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+  background: #3d3d3f;
+  min-height: 450px;
+}
+
+
+/* --------- Content 3 - Sponsors --------- */
+
+/* Meet the team album */
+
+.team-container {
+  background-color: #3d3d3f;
+  text-align: center;
+  padding-top: 165px;
+  color: white;
+}
+
+.team-member-pic-card {
+  max-width: 160px;
+  max-height: 160px;
   display: inline-block;
-  position: relative;
-  box-shadow: 
-    inset 0 0 0 16px rgba(255,255,255,0.2),
-    0 1px 2px rgba(0,0,0,0.1);
-  transition: all 0.4s ease-in-out;
-  cursor: default;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
-.circle-info {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  position: absolute;
-  background: rgba(255,115,0, 0.85); /* CUSTOMIZE THIS to fit specific images */
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  transform: scale(0);
+.member-pic {
+
 }
 
-.circle-info h3 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin: 0 30px;
-  padding: 45px 0 0 0;
-  height: 140px;
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: 
-    0 0 1px #fff, 
-    0 1px 2px rgba(0,0,0,0.3);
+.member-pic-info < h4, p {
+  visibility: hidden;
 }
 
-.circle-info a {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
+.member-pic:hover {
+
 }
 
-.circle-image a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px;
-  border: solid 3px #ffffff;
-  border-radius: 25px;
-  background-color: rgba(255,255,255,0.1);
-}
-
-.circle-image a:active {
+#the-team-caption {
+  padding-top: 8%;
   color: #FF7300;
-  text-decoration: none;
-  background-color: rgba(255,255,255,0.1);
+  font-size: 56px;
+  font-weight: lighter;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
 }
 
-.circle-image a:visited {
-  color: #ffffff;
-  text-decoration: none;
+#hover-pic-explained {
+  color: #a8a8a8;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
 }
 
-.circle-image:hover {
-  box-shadow: 
-    inset 0 0 0 1px rgba(255,255,255,0.1),
-    0 1px 2px rgba(0,0,0,0.1);
+.divider {
+  max-width: 50%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.circle-image:hover .circle-info {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Sets the image urls for the circle images */
-/* IMPORTANT: Picture needs to be 256x256 (Will brake design otherwise); */
-#circle1 {
-  background-image: url("https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/how_to_spend_your_money_1054090467.jpg?quality=89&w=256");
-}
-#circle2 {
-  background-image: url("https://www.cis.rit.edu/~cnspci/courses/common/images/checkerboard-256x256.jpg");
-}
-#circle3 {
-  background-image: url("https://news.artnet.com/app/news-upload/2017/04/news-logo-256x256.png");
-}
-/* -------------------------------------------------------------------- */
-
-/* ----- End of Circle Header Stylings & Animation ------ */
-
-/* Parallax effect and Parallax content - note: background-images set just below with IDs */
-#parallax1 {
-  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/23915911_1731691816843704_8685908630394450572_n.jpg?oh=9279db570bde05a278388b7b4c73a207&oe=5B1C4BEB");
-  height: 100%;
-}
-#parallax2 {
-  background-image: url("../resources/parallax/parallax2.png");
-}
-
-.parallax {
-  background-color: gray;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-/* End of Parallax effect and Parallax content */
-
-/* --------- Content 2 Styles (I.e. President's Address) --------- */
-
-#president-text-box {
-  font-size: 18px;
-  text-shadow: black 0.5px 0px 0px;
-  padding: 10%;
-  padding-top: 6%;
-  padding-bottom: 6%;
-}
-
-#president-text-title {
-  color: #FF8300;
-  font-size: 34px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  font-family: 'Raleway', sans-serif;
-}
-
-#president-text-box article {
-  padding: 5%;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  color: #FFFFFF;
-}
-
-#president_pic {
-  position: relative;
-  right: -45%;
-  display: inline-block;
-  max-height: 124px;
-  max-width: 124px;
-}
-
-/* -------------- Parallax Content Responsiveness -------------- */
-
-@media (min-width: 1100px) {
-  #president-text-box  {
-    padding-top: 15px;
-    padding-right: 15%;
-    padding-left: 15%;
-  }
-}
-
-@media (max-width: 760px) {
-  #president-text-title {
-    color: #FF7300;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-  }
-  #president-text-box  {
-    padding: 20%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  #president-text-box article {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 675px) {
-    #president-text-box  {
-      padding: 4%;
-      padding-top: 1%;
-      font-size: 12px;
-  }
-}
-/* -------------- End Parallax Content Responsiveness -------------- */
-
-/* --------- Closes Content2 --------- */
-
-/* --------- Content 3 - Sponsorship Field --------- */
-
-.sponsor-field {
+.sponsor-container {
   text-align: center;
-  background-color: #FF8300;
+  min-height: 50px;
+  color: #a8a8a8;
+  padding-top: 50px;
+  border-bottom: gray 2px;
 }
 
-#sponsor1 {
-  width: 100%;
+.company-logo {
+  display: inline-block;
+  max-width: 300px;
+  max-height: 300px;
 }
-#kpmg-img {
 
-}
+
 /* Fluid-container Overwrite Stylings */
 
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
 }
-
-/* End of Fluid-container Overwrite Stylings */
-
-/* --------- Closes Content 3 --------- */
-
-/* Manager Bild Styling */
-#verona_img {
-}
-
-#italic_picture_description {
-  text-align: center;
-  padding: 9px;
-}
-/* Meny Styling */
-.menu-header {
-  font-style: italic;
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px;
-}
-.menu-item {
-  padding: 10px;
-}
-.name-of-dish {
-  font-weight: bold;
-  font-style: normal;
-}
-.ingridients-of-dish {
-  font-style: normal;
-}
-.price-of-dish {
-  font-style: italic;
-} 
 
 .fill {
     width: 100%;
@@ -424,24 +526,13 @@ footer {
     text-decoration: none;
 }
 
-#Brand_AUEBS {
-  font-size: 18px;
-}
 
 /* -------------- NavBar Brand + Link Font Responsiveness -------------- */
-@media  (max-width: 480px) {
-  #Brand_AUEBS {
-    font-size: 14px !important;
-  } 
-}
 
 @media (max-width: 1024px) {
   .nav_anchor_text {
     font-size: 9px;
   }
-  #Brand_AUEBS {
-    font-size: 14px;
-  } 
 }
 
 @media (max-width: 1200px) {
